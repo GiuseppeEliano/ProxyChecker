@@ -7,10 +7,16 @@ Proxy checker is a multithreaded system that verify high amount of proxies list 
 The correct list format is: IP:Port. Each in single line
 <p align="center">
   <img src="https://i.imgur.com/ui9Tv5J.png" title="Demonstration">
-</p>
+</p><br>
 
 **My proxies are shared after the scan?**<br>
 No, never. We also works offline too.
+
+**There are limits?**<br>
+No, feel free to scan big proxies lists.
+
+**What is the recommended thread count to use?**<br>
+If you have a good and decent computer, you will be able to choose the maximum value(300), otherwise, choose 175 or less.
 
 ## :white_check_mark: Updates
 ### Version 1.0<br>
