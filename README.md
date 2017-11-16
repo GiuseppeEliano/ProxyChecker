@@ -6,7 +6,7 @@ Proxy checker is a multithreaded system that verify high amount of proxies list 
 **What is the correct list format?**<br>
 The correct list format is: IP:Port. Each in single line
 <p align="center">
-  <img src="https://i.imgur.com/ui9Tv5J.png" title="Demonstration">
+  <img src="https://i.imgur.com/c6JjMDE.png" title="Demonstration">
 </p><br>
 
 **My proxies are shared after the scan?**<br>
