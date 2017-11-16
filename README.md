@@ -1,5 +1,8 @@
 # Proxy checker
 Proxy checker is a multithreaded system that verify high amount of proxies list in a short interval time bringing flexible controls<br>
+<p align="center">
+  <img src="https://i.imgur.com/dFasxUB.png" title="Demonstration">
+</p><br><br>
 
 ## :trident: FAQ
 
