@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ProxyChecker.exe" version="1.0.0.0" publicKeyToken="55b99f3aed4d5a92" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Check.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ProxyChecker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ProxyChecker.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bunifu_UI_v1.5.3.dll" size="242176">
+      <assemblyIdentity name="Bunifu_UI_v1.5.3" version="1.5.3.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8bPg8nUKkQPkampKNPHPnRd3lyX5gELMJHXsZkhIAc8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProxyChecker.exe" size="145368">
+      <assemblyIdentity name="ProxyChecker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>S9G26O8abbrEzboOu6RckJlVbIGi1m16yFMt3FrActs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Check.ico" size="32038">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jyNy1u+JNNYvFQU0wZJQAz/SlTCg9TOZ5NECqZMnSz8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ProxyChecker.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>h0UeIdteCM29dGVw07LmHp593fPbh0IN11GyN3f2uRA=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Giuseppe-PC\Giuseppe" issuerKeyHash="1fc209b26467ad02943221d6ac03bfa10fac93ef" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Q3Ex0ojvsJV6Z7SNtCEZE8k8vFT6so4pRsn7vE1SMXY=</DigestValue></Reference></SignedInfo><SignatureValue>bMRGOf+gO4FtEyfPngQAHTiQjf6EH55r7vyHpdla5YB1zccHRtSi/iY7GYsh12U9dMiS0gg1X9xz5OX/qZVZbQ37x/K4pi2Wa/POjsfSH5hhxDi0PPK8oq5PlPVc44H0ZMGtZhN6XFK+5WRE7PZltVRZ1qCS4znp2QmeVJOwv2s=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>xn+xg5Yh9asnOJ8ddJ/5VPK6pj89s7CBS7oivpuL2xyyfwZUEcpgydnb8YV2LxkuykuKZTFPqlpOHm1lSMhhir4WcN168mqcs/NKOMy8XFDs0cMsPEXoe5WWo2wj1g1mQqDiZCxQH35KGCfUAIrCjeKHRJNLfZDwwMNqSm+bE0U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="7631524dbcfbc946298eb2fa54bc3cc9131921b48db4677a95b0ef88d2317143" Description="" Url=""><as:assemblyIdentity name="ProxyChecker.exe" version="1.0.0.0" publicKeyToken="55b99f3aed4d5a92" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Giuseppe-PC\Giuseppe</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>lWt0k/uDkAj/bVZlBfCfjeoC/DJYwWv8LX1pA1yfx7U=</DigestValue></Reference></SignedInfo><SignatureValue>Pu0fuB9jh2velv6heHvxjQ42mp+JVnB4wQENdUzA+QytFyi7Zhd+XddaWRG4DOP5BKO5JZ/KsE0C3Fh/W1krDR5030KeoFDcQrVEHu6GA/Xe/8+EfAYEH19wQMXcYdXmNx5pEdO9OxC0C0+DC9RVdgmT+9vJBkCewvd4yADs3L0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>xn+xg5Yh9asnOJ8ddJ/5VPK6pj89s7CBS7oivpuL2xyyfwZUEcpgydnb8YV2LxkuykuKZTFPqlpOHm1lSMhhir4WcN168mqcs/NKOMy8XFDs0cMsPEXoe5WWo2wj1g1mQqDiZCxQH35KGCfUAIrCjeKHRJNLfZDwwMNqSm+bE0U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQfHMeLnXobJpOkMO7lW8FRTANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigARwBpAHUAcwBlAHAAcABlAC0AUABDAFwARwBpAHUAcwBlAHAAcABlMB4XDTE3MTExNjAyNDUxN1oXDTE4MTExNjA4NDUxN1owMzExMC8GA1UEAx4oAEcAaQB1AHMAZQBwAHAAZQAtAFAAQwBcAEcAaQB1AHMAZQBwAHAAZTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAxn+xg5Yh9asnOJ8ddJ/5VPK6pj89s7CBS7oivpuL2xyyfwZUEcpgydnb8YV2LxkuykuKZTFPqlpOHm1lSMhhir4WcN168mqcs/NKOMy8XFDs0cMsPEXoe5WWo2wj1g1mQqDiZCxQH35KGCfUAIrCjeKHRJNLfZDwwMNqSm+bE0UCAwEAATANBgkqhkiG9w0BAQsFAAOBgQCL+2rh4LpNeM/bGA6liZKTpeLBHj3bkHZfmqBQHoVTY89ZLHHzCpnhFriObRkKzry+BnQy7Y9y2AtC9Eg9yC0sUDg4ftnqjzZDlzWVcgm1jmPrMpUmLBwHaB/3bnVMzapoZzWEuxxhgIodW5iuWcpvXER1/SzwbBSf2dNaFuos4g==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
